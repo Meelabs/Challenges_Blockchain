@@ -29,7 +29,7 @@ contract contract2 {
     countOfParticipants++;
   }
 
-  /// @notice OWner starts lottery
+  /// @notice Owner starts lottery
 
   function startLottery() public {
     // This is owner?

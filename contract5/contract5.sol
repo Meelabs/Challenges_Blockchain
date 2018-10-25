@@ -14,7 +14,7 @@ contract contract5 {
     if (bytes(_input).length == 0) 
         return 0x0;
 
-    // Implement Asembly block with assembly functions
+    // Implement assembly block with assembly functions
     assembly { 
         output := mload(add(_input, 32)) 
     }

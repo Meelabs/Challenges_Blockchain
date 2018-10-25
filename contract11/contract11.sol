@@ -9,7 +9,7 @@ contract contract11 {
   address  player1; 
   // Player1 trun
   bool player1turn = true; 
-  // Addres of player2
+  // Address of player2
   address player2; 
   // Player2 turn
   bool player2turn; 
@@ -18,7 +18,7 @@ contract contract11 {
   // Board
   uint[3][3] board;
   // Address of winner
-  address public addresOfWinner; 
+  address public addressOfWinner; 
   // Name of winner
   uint public nameOfWinner; 
 
@@ -71,10 +71,10 @@ contract contract11 {
       if(getWinner() == 1) 
       {
         // Set winner
-        addresOfWinner = player1;
+        addressOfWinner = player1;
         nameOfWinner = 1;
-        // Tranfer money to winner
-        addresOfWinner.transfer(address(this).balance); 
+        // Transfer money to winner
+        addressOfWinner.transfer(address(this).balance); 
       }
 
       return;
@@ -96,9 +96,9 @@ contract contract11 {
       if(getWinner() == 2) 
       {
         // Set winner
-        addresOfWinner = player2;
+        addressOfWinner = player2;
         nameOfWinner = 2;
-        addresOfWinner.transfer(address(this).balance); //Tranfer money to winner
+        addressOfWinner.transfer(address(this).balance); //Transfer money to winner
       }
     }
   }
@@ -126,7 +126,7 @@ contract contract11 {
 
   /// @notice Display board
 
-  function displayTable() public view returns(uint,uint,uint,uint,uint,uint,uint,uint,uint) {
+  function displayTable() public view returns(uint, uint, uint, uint, uint, uint, uint, uint, uint) {
     return (board[0][0], board[0][1], board[0][2], board[1][0], board[1][1], board[1][2], board[2][0], board[2][1], board[2][2]);
   }
 
@@ -144,7 +144,7 @@ contract contract11 {
       for (uint j = 0; j < 3; j++)
           board[i][j] = 0;
 
-    addresOfWinner = 0;
+    addressOfWinner = 0;
     nameOfWinner = 0;
   }
 }

@@ -20,7 +20,7 @@ contract contract10 {
 
   // Array of addresses of candidates
   address[] public candidates;
-  // Mapping address to struct of signle candidate - to store information
+  // Mapping address to struct of single candidate - to store information
   mapping(address => candidate) public candidatesInfo;
 
   // Array of addresses of voters

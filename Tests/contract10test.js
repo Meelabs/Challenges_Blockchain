@@ -18,7 +18,7 @@ contract('contract10', async (accounts) => {
         it("test add candidate", async () => {
             // Assign Address and name of candidate
             await instance.addCandidate(accounts[1],"John");
-            // How many candiddate?
+            // How many candidates?
             assert.equal(await instance.getLenOfCandidates(), 1, "The number of candidates is not correct"); 
         });
         it("test name candidate", async () => {
@@ -37,7 +37,7 @@ contract('contract10', async (accounts) => {
             assert.equal(await instance.getCountOfVotesOfCandidate(accounts[1]), 1, "The count of votes is not correct"); 
         });
         it("test address of winner", async () => {
-            // Check addres of winner
+            // Check address of winner
             assert.equal(await instance.getAddressOfWinner(), accounts[1], "The address of winner is not correct"); 
         });
         it("test name of winner", async () => {

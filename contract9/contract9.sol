@@ -13,7 +13,7 @@ contract contract9 is usingOraclize {
         oraclize_setProof(proofType_Ledger); 
     }
     
-    /// @notice Recive data and save to member
+    /// @notice Receive data and save to member
 
     function __callback(bytes32 myid, string result, bytes proof) {
         // Check addres

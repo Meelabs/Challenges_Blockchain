@@ -65,7 +65,7 @@ contract contract6 {
 
     /// @notice Get x coordinate bus station
     /// @param _number index at array
-    /// @return x coordiante
+    /// @return x coordinate
 
     function getBusStationNameXCoordinate(uint _number) public view returns(string) {
         require(_number < listOfBusStatation.length, "Wrong index!");
@@ -74,7 +74,7 @@ contract contract6 {
 
     /// @notice Get y coordinate bus station
     /// @param _number index at array
-    /// @return y coordiante
+    /// @return y coordinate
 
     function getBusStationNameYCoordinate(uint _number) public view returns(string) {
         require(_number < listOfBusStatation.length, "Wrong index!");

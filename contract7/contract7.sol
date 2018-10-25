@@ -7,7 +7,7 @@ import "./Ownable.sol";
 
 contract contract7 is Ownable {
 
-  //Struct of signle manager
+  //Struct of single manager
   struct manager {
     string name;
     address addressManager;

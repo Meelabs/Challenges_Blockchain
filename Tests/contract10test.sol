@@ -20,7 +20,7 @@ contract contract10test {
     function testAddCandidate() public {
         // Assign Address and name of candidate
         contract10instance.addCandidate(0x3d83B2A6aB4fc91815a01203C5C980CF578CCF59,"John"); 
-        // How many candiddate?
+        // How many candidates?
         Assert.equal(contract10instance.getLenOfCandidates(), 1, "The number of candidates is not correct"); 
     }
 

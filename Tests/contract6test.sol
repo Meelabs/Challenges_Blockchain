@@ -9,7 +9,7 @@ import "../contracts/contract6.sol";
 contract contract6test {
     contract6 instance;
     
-    /// @notice Add Bus station with all parametrs
+    /// @notice Add Bus station with all parameters
 
     function testAddBusStationCorrect() public {
         instance = new contract6();
@@ -81,7 +81,7 @@ contract contract6test {
     ); 
     }
 
-    /// @notice Add Bus station without x coordiante
+    /// @notice Add Bus station without x coordinate
 
     function testAddBusStationWithoutX() public {
         Assert.equal(

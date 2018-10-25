@@ -7,7 +7,7 @@ import "github.com/oraclize/ethereum-api/oraclizeAPI.sol";
 contract contract8 is usingOraclize {
     string public lpgPrice;
 
-    ///Recive data and save to member
+    ///Receive data and save to member
 
     function __callback(bytes32 myid, string result) {
         lpgPrice = result;
@@ -18,5 +18,4 @@ contract contract8 is usingOraclize {
     function update() payable public {
         oraclize_query("URL", "xml(https://www.fueleconomy.gov/ws/rest/fuelprices).fuelPrices.lpg");
     }
-    
 }
